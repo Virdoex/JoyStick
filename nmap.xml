@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Wed Nov 20 10:22:11 2019 as: nmap -sC -sV -Pn -oA nmap -p80,22,21 10.10.106.59 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -Pn -oA nmap -p80,22,21 10.10.106.59" start="1574245331" startstr="Wed Nov 20 10:22:11 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="3" services="21-22,80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1574245333" endtime="1574245375"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.106.59" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" product="vsftpd" version="3.0.3" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.3</cpe></service><script id="ftp-anon" output="got code 500 &quot;OOPS: vsftpd: refusing to run with writable root inside chroot()&quot;."/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.8" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 c7:ce:5d:fa:24:68:3a:10:63:f9:28:1b:f4:6d:e5:bc (RSA)&#xa;  256 6b:7b:f5:12:e0:db:bb:b0:ca:f8:f8:c0:84:bc:27:e6 (ECDSA)&#xa;  256 1b:d4:20:23:d0:5b:32:16:ad:c2:a9:cd:99:1c:e6:6e (ED25519)"><table>
+<elem key="bits">2048.0</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">c7ce5dfa24683a1063f9281bf46de5bc</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDviekIGKBudV6eCKiRkvoK3+KbLYFlqNUkOi/nphorAqF22v/wOzvbr9hcn7/S6STJeYDHVpsKl2Ku5COzQs7zbWkv/jH9LX6R0s5pICbohVvCDjeEvdaMks9yU1/5AYj25RPi1SMLq3boEKuJiu1J+i+ADVTcE4PxvPT6rDOvh9TwVYzWuuezz8nrejAhJGvamsaaJzstZQkn+I7cY2TAeRoRJqnOmLffmNQfG2T4hDm7pg8x7nSHIStlGl3i+SZepokyPm4+rW9tKiJ9bPa9CoW7i/uT7gBFJYGNFPK8i5Rh7KIphWE7W8iMZjNE7ujTSUHnWchGyBmFihEuz777</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">6b7bf512e0dbbbb0caf8f8c084bc27e6</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAFywRYgcs+ORO0qsevRGXL7QGqLeUlNAYjDTWs7FG9hQYYA50Znen7XGzSPIY6gt57HUYp2bWD12rKLw4rcnQw=</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">1bd42023d05b3216adc2a9cd991ce66e</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIOVUvn4lBmcT/u4LxGHkddF39Y3bAnk8CmiVa2DGKFWU</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-title" output="JoyStick Gaming"><elem key="title">JoyStick Gaming</elem>
+</script></port>
+</ports>
+<times srtt="913160" rttvar="699450" to="3710960"/>
+</host>
+<runstats><finished time="1574245375" timestr="Wed Nov 20 10:22:55 2019" elapsed="44.71" summary="Nmap done at Wed Nov 20 10:22:55 2019; 1 IP address (1 host up) scanned in 44.71 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
